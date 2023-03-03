@@ -1,0 +1,47 @@
+Language model created by QuickLM on Mon Feb  8 18:13:22 EST 2021
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 4 sentences and 7 words
+
+\data\
+ngram 1=7
+ngram 2=9
+ngram 3=8
+
+\1-grams:
+-0.9031 </s> -0.3010
+-0.9031 <s> -0.2430
+-1.5051 DOCKER -0.2430
+-1.5051 JAVA -0.2430
+-1.5051 KAFKA -0.2430
+-0.9031 OK -0.2430
+-1.5051 SERVICES -0.2430
+
+\2-grams:
+-0.3010 <s> OK 0.0000
+-0.3010 DOCKER </s> -0.3010
+-0.3010 JAVA </s> -0.3010
+-0.3010 KAFKA </s> -0.3010
+-0.9031 OK DOCKER 0.0000
+-0.9031 OK JAVA 0.0000
+-0.9031 OK KAFKA 0.0000
+-0.9031 OK SERVICES 0.0000
+-0.3010 SERVICES </s> -0.3010
+
+\3-grams:
+-0.9031 <s> OK DOCKER
+-0.9031 <s> OK JAVA
+-0.9031 <s> OK KAFKA
+-0.9031 <s> OK SERVICES
+-0.3010 OK DOCKER </s>
+-0.3010 OK JAVA </s>
+-0.3010 OK KAFKA </s>
+-0.3010 OK SERVICES </s>
+
+\end\
